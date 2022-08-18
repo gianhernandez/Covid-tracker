@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+
+
+<div class="container text-center">
+  <div class="row">
+    <div class="col">
+        <img src="{% static 'images/coronavirus-static.png' %}" id="covid" height="120px" width="120px">
+      <p class="totals">World New Cases: {{ world_new_cases }}</p>
+        <p class="totals">World Total Cases: {{ world_total_cases }}</p>
+    </div>
+    <div class="col">
+        <img src="{% static 'images/death-static.jpeg' %}" id="death" height="120px" width="120px">
+      <p class="totals">World New Deaths: {{ world_new_deaths }}</p>
+        <p class="totals">World Total Deaths: {{ world_total_deaths }}</p>
+    </div>
+    <div class="col">
+        <img src="{% static 'images/heart-static.png' %}" id="heart" height="120px" width="120px">
+
+      <p class="totals">World Total Recovered: {{ world_total_recovered }}</p>
+    </div>
+  </div>
+</div>
+
+
+    <h1 id="title">Covid-19 Tracker</h1>
+
+
+    <table class="display" id="country-table">
+
+        <thead>
+
+        <tr>
+
+            <th scope="col">Country</th>
+            <th scope="col">New Cases</th>
+            <th scope="col">Total Cases</th>
+            <th scope="col" class="deaths">New Deaths</th>
+            <th scope="col">Total Deaths</th>
+
+            <th scope="col">Recovered</th>
+
+        </tr>
+        </thead>
+        <tbody>
+        {% for x in total_info %}
+
+                <tr>
+
+                    <td>{{ x.country }}</td>
+                    {% if x.cases.new == None %}
+                        <td>0</td>
+                        {% else %}
+                    <td>{{ x.cases.new }}</td>
+                    {% endif %}
+                    <td>{{ x.cases.total }}</td>
+                    <td class="deaths">{{ x.deaths.new }}</td>
+
+
+
+                     <td>{{ x.deaths.total }}</td>
+                <td>{{ x.cases.recovered }}</td>
+                </tr>
+
+            {% endfor %}
+
+        </tbody>
+
+    </table>
+
+
+
+{% endblock %}

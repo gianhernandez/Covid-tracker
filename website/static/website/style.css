@@ -1,0 +1,75 @@
+
+label {
+    margin-bottom: 10px;
+    color: white;
+}
+
+input {
+    color: white;
+}
+
+body {
+
+/* Created with https://www.css-gradient.com */
+/* Created with https://www.css-gradient.com */
+/* Created with https://www.css-gradient.com */
+background: #5A5A5A;
+background: -webkit-radial-gradient(center, #5A5A5A, #010101);
+background: -moz-radial-gradient(center, #5A5A5A, #010101);
+background: radial-gradient(ellipse at center, #5A5A5A, #010101);
+    color: white !important;
+
+}
+
+h1 {
+    margin: 3rem 0 !important;
+}
+
+footer {
+    padding: .5rem;
+    text-align: center;
+}
+
+.dataTables_length select {
+    color: white;
+}
+
+.copyright {
+    margin-top: 1.5rem;
+}
+
+.cell-border {
+    border: solid 1px black;
+    color: black;
+}
+
+.deaths {
+    color: #ff4b4b;
+}
+
+.icons {
+    font-size: 1.5rem;
+    padding: 25px;
+    color: white;
+}
+
+.top-section {
+    border: solid 1px black;
+    margin-top: 3rem;
+
+}
+
+.totals {
+    font-family: 'Varela Round', sans-serif;
+    padding-top: 1rem;
+}
+
+#country-table_info {
+    color: white;
+}
+
+#country-table_paginate a {
+    color: white !important;
+}
+
+
