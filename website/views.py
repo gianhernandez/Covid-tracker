@@ -11,7 +11,7 @@ def index(request):
     statistics = "https://covid-193.p.rapidapi.com/statistics"
 
     headers = {
-        "X-RapidAPI-Key": config('RAPID_API_KEY'),
+        "X-RapidAPI-Key": "245f2164c0mshc0a2b30554dc475p165a3cjsn5c37107c44e6",
         "X-RapidAPI-Host": "covid-193.p.rapidapi.com"
     }
 
